@@ -1,130 +1,104 @@
-/* 기본 리셋 */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
-/* 전체 설정 */
 body {
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI",
     "Apple SD Gothic Neo", "Noto Sans KR", sans-serif;
-  background-color: #0f0f12;
-  color: #eaeaea;
-  line-height: 1.6;
+  background: #ffffff;
+  color: #222;
+  line-height: 1.7;
 }
 
-/* 공통 레이아웃 */
-section {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 100px 24px;
-}
-
-/* 헤더 */
-header {
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background: rgba(15, 15, 18, 0.8);
-  backdrop-filter: blur(10px);
-  z-index: 100;
-}
-
-nav {
-  max-width: 900px;
-  margin: 0 auto;
-  padding: 16px 24px;
-  display: flex;
-  justify-content: space-between;
-}
-
-nav a {
-  color: #aaa;
-  text-decoration: none;
-  margin-left: 16px;
-  font-size: 14px;
-}
-
-nav a:hover {
-  color: #fff;
-}
-
-/* 인트로 */
-#intro {
-  padding-top: 160px;
-}
-
-#intro h1 {
-  font-size: 48px;
-  margin-bottom: 16px;
-}
-
-#intro p {
-  font-size: 18px;
-  color: #b5b5b5;
-}
-
-/* 섹션 제목 */
-section h2 {
-  font-size: 28px;
-  margin-bottom: 32px;
-  border-bottom: 1px solid #2a2a2a;
-  padding-bottom: 8px;
-}
-
-/* 스킬 */
-.skills {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 12px;
-}
-
-.skill {
-  padding: 8px 14px;
-  border-radius: 20px;
-  background: #1f1f24;
-  font-size: 14px;
-}
-
-/* 프로젝트 */
-.projects {
-  display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
-  gap: 20px;
-}
-
-.project {
-  background: #1b1b20;
-  padding: 20px;
-  border-radius: 12px;
-}
-
-.project h3 {
-  margin-bottom: 8px;
-}
-
-.project p {
-  font-size: 14px;
-  color: #b0b0b0;
-}
-
-.project a {
-  display: inline-block;
-  margin-top: 12px;
-  font-size: 14px;
-  color: #7aa2ff;
+a {
+  color: #0066cc;
   text-decoration: none;
 }
 
-.project a:hover {
+a:hover {
   text-decoration: underline;
 }
 
-/* 푸터 */
-footer {
-  text-align: center;
-  padding: 40px 0;
-  color: #777;
+.container {
+  max-width: 720px;
+  margin: 0 auto;
+  padding: 80px 24px;
+}
+
+.header {
+  margin-bottom: 60px;
+}
+
+.name {
+  font-size: 40px;
+  font-weight: 700;
+}
+
+.title {
+  margin-top: 8px;
+  font-size: 18px;
+  color: #555;
+}
+
+.contact {
+  margin-top: 12px;
   font-size: 14px;
+  color: #666;
+}
+
+section {
+  margin-bottom: 56px;
+}
+
+section h2 {
+  font-size: 22px;
+  margin-bottom: 16px;
+  border-bottom: 1px solid #e5e5e5;
+  padding-bottom: 6px;
+}
+
+.list {
+  list-style: none;
+}
+
+.list li {
+  margin-bottom: 8px;
+}
+
+.item {
+  margin-bottom: 24px;
+}
+
+.item-header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 600;
+}
+
+.item-title {
+  font-size: 16px;
+}
+
+.item-date {
+  font-size: 14px;
+  color: #888;
+}
+
+.item-desc {
+  margin-top: 6px;
+  color: #444;
+  font-size: 15px;
+}
+
+.item-links {
+  margin-top: 6px;
+  font-size: 14px;
+}
+
+.footer {
+  margin-top: 80px;
+  font-size: 13px;
+  color: #999;
 }

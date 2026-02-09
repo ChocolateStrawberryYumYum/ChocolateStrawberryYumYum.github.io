@@ -3,61 +3,79 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>이상민 | Portfolio</title>
-
-  <!-- ✅ CSS 연결 -->
+  <title>이상민 | Resume</title>
   <link rel="stylesheet" href="style.css" />
 </head>
 
 <body>
-  <header>
-    <nav>
-      <strong>이상민</strong>
-      <div>
-        <a href="#skills">Skills</a>
-        <a href="#projects">Projects</a>
-        <a href="#contact">Contact</a>
+  <main class="container">
+    <!-- Header -->
+    <header class="header">
+      <h1 class="name">이상민</h1>
+      <p class="title">Backend / Full-stack Developer</p>
+      <p class="contact">
+        <a href="mailto:simon882@naver.com">simon882@naver.com</a> ·
+        <a href="https://github.com/ChocolateStrawberryYumYum" target="_blank">
+          GitHub
+        </a>
+      </p>
+    </header>
+
+    <!-- About -->
+    <section>
+      <h2>About</h2>
+      <p>
+        비즈니스 가치를 중요하게 생각하며, 문제를 구조적으로 해결하려는 개발자입니다.
+        사용자와 팀 모두에게 의미 있는 결과를 만드는 데 관심이 있습니다.
+      </p>
+    </section>
+
+    <!-- Skills -->
+    <section>
+      <h2>Skills</h2>
+      <ul class="list">
+        <li><strong>Languages</strong> · JavaScript, Python</li>
+        <li><strong>Frameworks</strong> · React, Django</li>
+        <li><strong>Tools</strong> · Git, GitHub</li>
+      </ul>
+    </section>
+
+    <!-- Experience -->
+    <section>
+      <h2>Experience</h2>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">게임개발 동아리 EGG</span>
+          <span class="item-date">2023 – 2024</span>
+        </div>
+        <p class="item-desc">
+          팀 프로젝트를 통해 협업 경험을 쌓고, 개발 프로세스와 초기 설계의 중요성을 이해했습니다.
+        </p>
       </div>
-    </nav>
-  </header>
+    </section>
 
-  <section id="intro">
-    <h1>안녕하세요, 이상민입니다.</h1>
-    <p>비즈니스 가치를 중요하게 생각하는 개발자를 꿈꾸는 이상민입니다.</p>
-  </section>
+    <!-- Projects -->
+    <section>
+      <h2>Projects</h2>
 
-  <section id="skills">
-    <h2>Skills</h2>
-    <div class="skills">
-      <div class="skill">JavaScript</div>
-      <div class="skill">React</div>
-      <div class="skill">Python</div>
-      <div class="skill">Django</div>
-    </div>
-  </section>
-
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="projects">
-      <div class="project">
-        <h3>향수 추천 서비스</h3>
-        <p>리뷰 데이터를 활용한 향수 추천 시스템</p>
-        <a href="#">GitHub →</a>
+      <div class="item">
+        <div class="item-header">
+          <span class="item-title">향수 추천 서비스</span>
+          <span class="item-date">2024</span>
+        </div>
+        <p class="item-desc">
+          리뷰 데이터를 분석하여 사용자 취향에 맞는 향수를 추천하는 서비스입니다.
+        </p>
+        <p class="item-links">
+          <a href="#">GitHub</a>
+        </p>
       </div>
-    </div>
-  </section>
+    </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Email: simon882@naver.com</p>
-    <p>GitHub: github.com/ChocolateStrawberryYumYum</p>
-  </section>
-
-  <footer>
-    © 2026 이상민
-  </footer>
-
-  <!-- JS는 body 맨 아래 -->
-  <script src="script.js"></script>
+    <!-- Footer -->
+    <footer class="footer">
+      © 2026 이상민
+    </footer>
+  </main>
 </body>
 </html>
